@@ -1,0 +1,40 @@
+/*====================== General =================================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: auto;
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+}
+
+.first-explanation-row,
+.second-explanation-row {
+  text-align: center;
+}
+
+.input:focus {
+  border: 1px solid #007bff;
+  border: none;
+}

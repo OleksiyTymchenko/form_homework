@@ -1,0 +1,295 @@
+.form-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-part:first-child {
+  margin-right: 10px;
+}
+/*============== Media =============*/
+@media (max-width: 1072px) {
+  .form-part,
+  .form-part:first-child {
+    width: 100%;
+    max-width: 540px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .form-part,
+  .form-part:first-child {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+.empty-row:last-child {
+  padding-bottom: 40px;
+}
+
+.form-container {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 540px;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+}
+
+.title-name {
+  color: #1c1c1c;
+  font-size: 24px;
+  letter-spacing: -0.4px;
+}
+
+.input-Name {
+  font-size: 15px;
+  color: #545454;
+}
+
+.input-NickName {
+  padding-bottom: 15px;
+}
+
+/*===================== First row ======================================*/
+.first_row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.first_row__input {
+  width: 100%;
+}
+
+.first_row__input:first-child {
+  margin-right: 10px;
+}
+/*============== Media =============*/
+
+@media (max-width: 560px) {
+  .first_row,
+  .adress-row {
+    width: 100%;
+    max-width: 540px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+  }
+}
+
+/*======================== Second row ================================*/
+.email-input {
+  width: 100%;
+}
+
+.email-text {
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+.email-text__explanation {
+  color: #969696;
+}
+
+/*============================ radio-button-row ====================================*/
+
+.radio-button-row {
+  display: flex;
+}
+
+.radio-Button-male:first-child {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.input-Name {
+  color: #545454;
+}
+/*
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid black;
+}
+*/
+/*============================= adress-row ==============================================*/
+.adress-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.country-select__name,
+#city {
+  width: 100%;
+}
+
+.input-Name,
+.city-input,
+.input,
+.city-input,
+.country-select__name,
+.country-select,
+.contry,
+.country-name,
+.adress-row {
+  width: 100%;
+}
+
+.contry {
+  margin-right: 10px;
+}
+
+/*=========================== Empty_row ===================================================*/
+#adress {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.city-input-empty {
+  width: 30%;
+}
+/*=========================== first-explanation-row =========================================*/
+
+.first-explanation-row {
+  width: 100%;
+  max-width: 380px;
+  margin: auto;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  //border-bottom: 1px solid #e4e4e4;
+
+  position: relative;
+}
+.first-explanation-row::after {
+  content: "";
+  height: 1px;
+  width: 500px;
+  color: #000;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*============================= second form-part ==================================*/
+
+/*=============================== profile-photo ==========================================*/
+.profile-photo-row__photo {
+  /*width: 100%;
+  display: flex;
+  justify-content: space-around;*/
+}
+
+.profile-photo-row {
+  margin-top: 30px;
+}
+
+.profile-photo-row__photo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.profile-photo-row__input-row,
+.profile-photo-row__photo__profile-photo {
+  width: 50%;
+}
+
+.profile-photo-row__input-row {
+  //width: 100%;
+  //margin: auto;
+}
+
+.profile-photo-row__photo__profile-photo {
+  background-image: url(../images/profile_photo.jpg);
+  height: 80px;
+  width: 80px;
+}
+
+.profile-photo-row__input-row__choose-photo {
+  width: 59%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.profile-photo-row__input-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+/*===================== choose photo ===============*/
+.form-item {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 140px;
+  display: flex;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.form-item__input {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 40px;
+  display: none;
+}
+
+.form-item__icon {
+  position: absolute;
+  pointer-events: none;
+  height: 20px;
+  right: 10px;
+  width: 20px;
+  //background-image: url(../images/Trash.svg);
+  //background-size: cover;
+}
+
+.profile-photo-row__input-row__deletephoto {
+  background-image: url(../images/Trash.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 5px;
+}
+
+.deletephoto_border {
+  border: 1px solid #e4e4e4;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.profile-photo-row__input-row__explanation-text {
+  position: absolute;
+  bottom: 0;
+  left: 21%;
+  color: #969696;
+}
